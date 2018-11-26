@@ -92,7 +92,6 @@ function endGame() {
   //visually removes rocks, but they are still in the background falling
   ROCKS.forEach(function(element){
     element.remove();
-    element.style.top = "401px";
     element.style.left = "401px";
   });
   
