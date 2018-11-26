@@ -92,10 +92,6 @@ function endGame() {
   clearInterval(gameInterval);
   
   debugger;
-  /*var allRocks = document.querySelectorAll('.rock');
-  while (allRocks[0]){
-    allRocks[0].parentNode.removeChild(allRocks[0]);
-  }*/
   
   for(var i =0;i<ROCKS.length;i++){
     ROCKS[i].remove();
