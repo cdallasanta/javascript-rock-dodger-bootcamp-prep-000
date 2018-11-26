@@ -7,7 +7,7 @@ const GAME_HEIGHT = 400;
 const GAME_WIDTH = 400;
 const LEFT_ARROW = 37; // use e.which!
 const RIGHT_ARROW = 39; // use e.which!
-const ROCKS = [];
+var ROCKS = [];
 const START = document.getElementById('start');
 
 var gameInterval = null;
@@ -86,13 +86,16 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  //stops making rocks
   clearInterval(gameInterval);
   
   debugger;
   
-  ROCKS.forEach(function(element){
+  //visually removes rocks, but they are still in the background
+  /*ROCKS.forEach(function(element){
     element.remove();
-  });
+  });*/
+  ROCKS = [];
   
   document.removeEventListener('keydown', moveDodger);
   
