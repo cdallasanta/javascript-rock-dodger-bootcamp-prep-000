@@ -91,12 +91,12 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   
-  debugger;
   
   ROCKS.forEach(function(element){
     element.remove();
   });
   
+  debugger;
   document.removeEventListener('keydown', moveDodger);
   
   alert("You've lost!");
