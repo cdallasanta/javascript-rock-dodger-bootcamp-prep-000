@@ -92,9 +92,9 @@ function endGame() {
   debugger;
   
   //visually removes rocks, but they are still in the background
-  /*ROCKS.forEach(function(element){
+  ROCKS.forEach(function(element){
     element.remove();
-  });*/
+  });
   ROCKS = [];
   
   document.removeEventListener('keydown', moveDodger);
