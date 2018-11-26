@@ -39,6 +39,12 @@ function checkCollision(rock) {
     if ((rockLeftEdge<=dodgerLeftEdge&&rockRightEdge>=dodgerLeftEdge) ||   //  `  __`____
         (rockLeftEdge>=dodgerLeftEdge&&rockRightEdge<=dodgerRightEdge) ||  //   __`__`___
         (rockLeftEdge<=dodgerRightEdge&&rockRightEdge>=dodgerRightEdge)){  //   _____`__  `
+        
+        
+  ROCKS.forEach(function(element){
+    element.remove();
+  });
+        
       return true;
     }
   }
