@@ -99,7 +99,9 @@ function endGame() {
   
   document.removeEventListener('keydown', moveDodger);
   
-  return alert("You've lost!");
+  alert("You've lost!");
+  
+  start();
 }
 
 function moveDodger(e) {
