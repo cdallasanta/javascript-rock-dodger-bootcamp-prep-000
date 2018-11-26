@@ -93,9 +93,7 @@ function endGame() {
   
   debugger;
   
-  for(var i =0;i<ROCKS.length;i++){
-    ROCKS[i].remove();
-  }
+  ROCKS.forEach(remove);
   
   window.removeEventListener('keydown', moveDodger);
   
