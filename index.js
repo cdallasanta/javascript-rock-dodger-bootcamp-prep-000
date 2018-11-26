@@ -68,7 +68,7 @@ function createRock(x) {
     } else if (rockFromTop<380) {
       window.requestAnimationFrame(moveRock);
     } else {
-      rock.parentNode.removeChild(rock);
+      rock.remove();
     }
   }
   
