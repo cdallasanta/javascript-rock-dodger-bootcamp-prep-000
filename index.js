@@ -65,7 +65,7 @@ function createRock(x) {
     //if it's collided, end the game. If it's still in play, move again, otherwise, remove it
     if(checkCollision(rock)){
       return endGame();
-    } else if (rockFromTop<400) {
+    } else if (rockFromTop<380) {
       window.requestAnimationFrame(moveRock);
     } else {
       rock.remove();
