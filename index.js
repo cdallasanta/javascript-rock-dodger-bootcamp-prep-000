@@ -89,7 +89,7 @@ function endGame() {
   //stops making rocks
   clearInterval(gameInterval);
   
-  //visually removes rocks, but they are still in the background falling
+  //visually removes rocks, but they are still in the background falling, so move them off the game board to the right
   ROCKS.forEach(function(element){
     element.remove();
     element.style.left = "401px";
@@ -144,6 +144,6 @@ function start() {
   START.style.display = 'none'
 
   gameInterval = setInterval(function() {
-    createRock(30 /*Math.floor(Math.random() *  (GAME_WIDTH - 20))*/)
+    createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
   }, 1000)
 }
