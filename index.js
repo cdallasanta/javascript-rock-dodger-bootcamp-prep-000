@@ -97,7 +97,7 @@ function endGame() {
     element.remove();
   });
   
-  window.removeEventListener('keydown', moveDodger);
+  document.removeEventListener('keydown', moveDodger);
   
   alert("You've lost!");
 }
