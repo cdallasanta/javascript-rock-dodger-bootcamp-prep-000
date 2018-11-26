@@ -95,7 +95,6 @@ function endGame() {
   ROCKS.forEach(function(element){
     element.remove();
   });
-  ROCKS = [];
   
   document.removeEventListener('keydown', moveDodger);
   
