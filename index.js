@@ -94,14 +94,14 @@ function endGame() {
   clearInterval(gameInterval);
   
   debugger;
-  /*
+  
   ROCKS.forEach(function(element){
     element.remove();
   });
   
   document.removeEventListener('keydown', moveDodger);
-  */
-  alert("You've lost!");
+  
+  return alert("You've lost!");
 }
 
 function moveDodger(e) {
